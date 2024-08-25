@@ -1,0 +1,153 @@
+*{
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+}
+.main{
+    height: 100%;
+    width: 100%;
+    position: relative;  
+    /* It is good to main dev as position relative */
+}
+nav{
+    height: 100px;
+    width: 100%;
+    /* background-color: red; */
+    border-bottom: 2px solid #dadada;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5vw 3vw;
+}
+.right-nav{
+    display: flex;
+    align-items: center;
+    gap: 4vw;
+}
+.nav h2{
+    font-size: 2vw;
+    font-weight: 700;
+
+}
+.nav h4{
+    font-size: 1.7vw;
+
+}
+.nav img{
+    font-size: 0.5vw;
+    font-weight: 800;
+    height: 5vw;
+    margin-left: 30vw;
+    width: 5vw;
+    display:none;
+}
+.content{
+    height: calc(100% - 100px);
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+.left{
+    height: 100%;
+    width: 55%;
+    padding:5vw 8vw ;
+    display: flex;
+    flex-direction: column;
+}
+ .left h1{
+    font-size: 5vw;
+    line-height: 4.4vw;
+
+}
+
+.left h1 span{
+    color: lightseagreen;
+}
+
+.left p{
+    font-size: 1.2vw;
+    font-weight: 600;
+    color: #666;
+    width: 80%;
+    margin-top: 3vw;
+    margin-bottom: 4vw;
+
+
+}
+.content button{
+    height: 10vw;
+    width: 15vw;
+    margin-left: 7vw;
+    margin-bottom: 10vw;
+    font-size: 1.5vw;
+    padding: 0.5vw 1vw;
+    background-color: lightseagreen;
+    color: #fff;
+    border-radius: 10px;
+    font-weight: 700;
+} 
+.right{
+    height: 100%;
+    width: 45%;
+    background-image: url(img.jpg);
+    background-size: contain;
+    background-position: center center;
+    background-repeat:round;
+}
+@media (max-width:600px){
+    .nav{
+        background-color: lightgreen;
+        color: #fff;
+        padding: 3vw 5vw;
+    }
+    .nav h2{
+        font-size: 6vw;
+    }
+    .nav h4{
+        /* font-size: 4vw; */
+        display: none;
+    }
+    .nav img{
+        display: block;
+        font-size: 2vw;
+        font-weight: 600;
+    }
+    .content{
+        height: calc(100% - 60px);
+        display: flex;
+        flex-direction: column;
+    }
+    .left{
+        width: 100%;
+        height: 60%;
+       
+
+    }
+    .right{
+        width: 100%;
+        height: 40%;
+
+    }
+    .left h1{
+        font-size: 7vw;
+        line-height: 7vw;
+    }
+    .left p{
+        font-size: 2vw;
+        line-height: 2.2vw;
+    }
+    .content button{
+        height: 60vw;
+        margin-left: 5vw;
+    }
+
+
+
+}
+
+
